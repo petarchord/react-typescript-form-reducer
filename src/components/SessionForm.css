@@ -1,0 +1,51 @@
+.session-wrapper {
+    width: 60%;
+    margin: 5rem auto;
+
+}
+
+form {
+
+}
+
+.form-element {
+    display: flex;
+    flex-direction: column;
+    margin: 2rem 0;
+
+}
+
+label {
+    margin-bottom: .2rem;
+
+}
+
+input {
+    border: 1px solid gray;
+    height: 30px;
+    padding: 0 .5rem;
+
+}
+
+input[type="submit"] {
+    width: 100%;
+    background-color: cadetblue;
+    color: white;
+    cursor: pointer;
+}
+
+input[type="submit"]:disabled {
+    background-color: darkgray;
+    cursor: not-allowed;
+}
+
+textarea {
+    border: 1px solid gray;
+    height: 100px;
+    padding: .5rem;
+}
+
+.form-error {
+    color: red;
+    margin-top: .2rem;
+}
