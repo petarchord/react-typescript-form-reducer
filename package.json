@@ -19,15 +19,13 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "prepare": "npx husky-init && npm install && husky install",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
+    "eject": "react-scripts eject",
+    "lint": "eslint --color --ext .ts,.tsx,.js,.jsx,.cjs 'src/'",
+    "lint:fix": "eslint --fix --ext .ts,.tsx,.js,.jsx,.cjs 'src/'",
+    "format": "prettier --write --ext .ts,.tsx,.js,.jsx,.cjs 'src/' --config ./.prettierrc'"
   },
   "browserslist": {
     "production": [
@@ -40,5 +38,22 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^17.4.2",
+    "@commitlint/config-conventional": "^17.4.2",
+    "@typescript-eslint/eslint-plugin": "^5.49.0",
+    "@typescript-eslint/parser": "^5.49.0",
+    "eslint": "^8.32.0",
+    "eslint-config-prettier": "^8.6.0",
+    "eslint-import-resolver-typescript": "^3.5.3",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-react": "^7.32.1",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "husky": "^8.0.0",
+    "lint-staged": "^13.1.0",
+    "prettier": "^2.8.3"
   }
+
 }

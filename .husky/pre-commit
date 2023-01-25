@@ -1,0 +1,12 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+echo '🏗️👷 Styling your project before committing 👷‍♂️🏗️'
+echo 'please be patient, this may take a while...'
+
+npm run lint ||
+(
+    echo '🔨❌ Yoo, you have a problem in your code. Check linter 🔨❌
+          Run `pnpm run lint`, fix problems and try to commit again.'
+    false
+)
