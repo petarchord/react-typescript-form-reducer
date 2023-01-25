@@ -21,7 +21,7 @@
     "start": "react-scripts start",
     "prepare": "npx husky-init && npm install && husky install",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "react-scripts test --watchAll=false",
     "eject": "react-scripts eject",
     "lint": "eslint --color --ext .ts,.tsx,.js,.jsx,.cjs 'src/'",
     "lint:fix": "eslint --fix --ext .ts,.tsx,.js,.jsx,.cjs 'src/'",
